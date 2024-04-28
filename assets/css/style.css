@@ -1,0 +1,298 @@
+/* ibrahimwebdeveloper.com Typhography list: 
+Authore: MD Ibrahim Khalil (Jewel)
+https://www.ibrahimwebdeveloper.com
+Born In: Dhaka, Bangladesh.
+Full Stack Developer */
+/* Google font link */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali&family=Playfair+Display:wght@500&family=Roboto&display=swap");
+
+/* all font name  */
+/* font-family: "Roboto", sans-serif !important;
+font-family: "Playfair Display", serif !important;
+font-family: "Noto Serif Bengali", serif !important; */
+/* all font name  */
+
+/* Common Code start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  font-family: "Roboto", sans-serif !important;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 150%;
+  margin-bottom: 2em;
+}
+.ff_heading {
+  font-family: "Playfair Display", serif !important;
+}
+.bg_color_one {
+  background-color: #C0C0C0 !important;
+}
+.color_one {
+  color: #6e0004 !important;
+}
+/* .bg_color_two {
+  background-color: #daf011 !important;
+} */
+.bg_color_footer {
+  background-color: #514E4C;
+}
+.color_two {
+  color: #9d6242 !important;
+  font-weight: bolder !important;
+  font-size: 1vw !important;
+}
+/* .bg_color_three {
+  background-color: #514E4C;
+} */
+.color_three {
+  color: #a14c30;
+}
+.transition {
+  transition: all 0.4s ease-in-out !important;
+}
+.text_shadow {
+  text-shadow: -1px 1px 0 #060b3b, 1px 1px 0 #9d6242, 1px -1px 0 #060b3b, -1px -1px 0 #00006e;
+  transition: all 0.2s ease-in-out;
+}
+/* Common Code end */
+
+/* header part  */
+.logo{
+	width: 40px;
+	height: 40px;
+}
+.header_top_raw h5{
+	font-family: "Playfair Display", serif !important;
+}
+
+/* nav part start  */
+#mobile_menu_icon{
+	position:absolute;
+	top:0px;
+	left:25px;
+	font-size:30px;
+	cursor:pointer;
+	transition:0.4s ease-in-out;
+	color: #201818;
+}
+#mobile_menu_icon:hover {
+	color:#FFD700;
+	text-shadow: 2px 2px 4px #000000;
+	transform:rotate(360deg);
+}
+#mobileMenu {
+	height:auto;
+	width: 0;
+	position: fixed;
+	z-index:9999999;
+	top:110px;
+	left:150px;
+	background-color:#D3D3D3;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 0px;
+	transition:0.4s ease-in-out;
+}
+
+#mobileMenu a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color:black;
+	display: block;
+	transition: 0.3s;
+}
+
+#mobileMenu a:hover {
+	color:#FFD700;
+	text-shadow: 2px 2px 4px #000000;
+}
+.mobile_menu_right_arrow{
+	color:#ffb397;
+	background-color:gray;
+	padding:1px 2px 8px 2px;
+	border-radius:50%;
+}
+#mobileMenu .mobileMenu_closeBtn {
+	position: absolute;
+	top:0;
+	right:25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+#mobileMenu .mobileMenu_closeBtn:hover {
+	transform:rotate(360deg);
+}
+
+input[type=search] {
+	margin-top: 5px;
+	border: 2px solid #FF5737;
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 5px;
+	transition: 0.4s ease-in-out;
+}
+
+input[type=search]:focus {
+  background-color:yellow;
+}
+/* header part  */
+
+/* heading hover effect */
+.heading_hover {
+  position: relative !important;
+  display: inline-block;
+}
+.heading_hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 95%;
+  left: 0;
+  background-color: #00006e;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 300ms;
+}
+.heading_hover:hover::after {
+  transform: scaleX(1);
+}
+.heading_hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background-color: #9d6242;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 300ms;
+}
+.heading_hover:hover::before {
+  transform: scaleX(1);
+}
+/* heading hover effect */
+
+/* wordl section :start */
+.finance_section a img,
+.business_section a img,
+.labour_industry_section a img,
+.environment_industry_section a img,
+.health_demography_section a img {
+  filter: drop-shadow(8px 8px 10px #00006e);
+  transition: all 0.4s ease-in-out;
+}
+.finance_section a img:hover,
+.related_posts_pic:hover,
+.older_posts_pic:hover,
+.business_section a img:hover,
+.labour_industry_section a img:hover,
+.environment_industry_section a img:hover,
+.health_demography_section a img:hover {
+  transform: scale(1.4, 1.1);
+  filter: invert(95%);
+}
+.related_posts_content:hover,
+.related_posts_content:hover {
+  color: #060b3b !important;
+}
+.section_title_hover:hover {
+  background-color: lightgray;
+}
+/* wordl section :end */
+/* counter part start */
+.counter_bg {
+	background: url("../img/cover-photo.png") no-repeat;
+	background-size: cover;
+	background-position: center;
+  }
+  .counter_overlay {
+	background: rgba(0, 0, 0, 0.4);
+  }
+  .counter_wrapper {
+	background-color: rgba(151, 211, 111, 0.4);
+	transition: all 0.4s ease-in-out;
+	transform: rotateY(20deg);
+  }
+  .counter_wrapper:hover {
+	background-color: rgba(151, 211, 111, 1);
+	transform: rotateX(20deg);
+  }
+  /* counter part end */
+
+  /* who we are  */
+
+.portfolio_gallary_item {
+	padding: 8px;
+  
+}
+
+.portfolio_gallary_item {
+	display: block;
+}
+
+.portfolio_gallary_item_inner:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.portfolio_gallary_item_inner {
+	background-color: rgb(93, 216, 232);
+	padding: 30px;
+	border-radius: 5%;
+}
+.portfolio_img_overlay_caption{
+	position:relative;
+	overflow:hidden;
+}
+.portfolio_gallary_item_inner img{
+	width: 100%;
+	height: 400px;
+	border: 1px solid red;
+	position:relative;
+	z-index:1;
+}
+.portfolio_gallary_item_inner:hover .overlay{
+	top:90%;
+}
+.overlay{
+	width:100%;
+	height:100%;
+	background-color:green;
+	position:absolute;
+	left:0;
+	opacity:1;
+	color:yellow;
+	font-weight:bold;
+	text-align:center;
+	z-index:2;
+	padding:5px;
+	top:100%;
+	transition:all 0.4s ease-in-out;
+}
+
+
+  /* who we are  */
+  
